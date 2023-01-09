@@ -1,0 +1,11 @@
+.full-width{
+    width: 100%;
+}
+
+.outline-all{
+    border: 1px solid grey;
+}
+
+.weatherCard{
+    margin: 1.5rem;
+}
