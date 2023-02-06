@@ -16,6 +16,7 @@ const month = date.getMonth();
 const day = date.getDate();
 //materialize init
 M.AutoInit();
+
 if (!localStorage.getItem("history")) {
   const tempStorage = [];
   localStorage.setItem("history", JSON.stringify(tempStorage));
@@ -171,19 +172,6 @@ function buildPageForecast(requestUrl) {
     });
 }
 
-//api Fetch request
-function getApi(requestUrl, forecastRequestURL) {
-  let responseData = "temp";
-  fetch(requestUrl)
-    .then(function (response) {
-      console.log(response);
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      buildPageCurr(data);
-    });
-}
 function buildHistory() {
   let storageArray = JSON.parse(localStorage.getItem("history"));
   for (let i = 0; i < storageArray.length; i++) {
