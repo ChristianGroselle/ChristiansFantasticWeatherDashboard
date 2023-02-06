@@ -28,7 +28,7 @@
                         <h4>Search for a City:</h4>
                     </div>
                     <div class="input-field col s12 ">
-                        <input placeholder="Enter the name of the city" id="first_name" type="text" class="validate ">
+                        <input placeholder="Enter the name of the city" id="searchBar" type="text" class="">
                     </div>
                     <div class="col s12">
                         <button class="btn waves-effect waves-light full-width blue-grey lighten-2" type="submit" name="action" id="searchBtn">Search
@@ -37,8 +37,10 @@
                 </div>
                 <hr class="col s12">
                 <div class="col s12">
-                    <ul>
+                    <ul id="historyList">  
                         <a class="waves-effect waves-light btn grey darken-2 full-width" id="testBtn">search history</a>
+                        <hr>
+                        
                     </ul>
                 </div>
                 
@@ -46,8 +48,8 @@
             <!-- main content -->
             <div class="col s9">
                 <div class="card col s12">
-                    <div class="card-content col s12">
-                        <h4>Athens (1/8/2023) icon</h4>
+                    <div class="card-content col s12" id="currWeather">
+                        <h4>Athens (1/8/2023) <img src="http://openweathermap.org/img/wn/10d@2x.png"></h4>
                         <ul>
                             <li>Temp: 54°F</li>
                             <hr>
